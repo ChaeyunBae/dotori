@@ -371,6 +371,9 @@ function recentlyClick(totalItemNum, buttonState) {
                             }
                         }
                         titleHtml= data[i].title;
+                        if (data[i].itemtype == "usd") {
+                            titleHtml += `<img src="/assets/img/ar.svg" class="ar-icon">`
+                        }
                         titleHtml +=    `<div class="bookmark-icon"> 
                                             <div class="bookmark-clicklistener" onclick="clickBookmarkIcon(this, '${fillBool}','${itemid}');event.stopPropagation();"></div>
                                             <object type="image/svg+xml" data="/assets/img/bookmark-${fillBool}.svg" class="bookmark-${fillBool}-icon"></object>
@@ -522,6 +525,9 @@ function topUsingClick(totalItemNum, buttonState) {
                             }
                         }
                         titleHtml= data[i].title;
+                        if (data[i].itemtype == "usd") {
+                            titleHtml += `<img src="/assets/img/ar.svg" class="ar-icon">`
+                        }
                         titleHtml +=    `<div class="bookmark-icon"> 
                                             <div class="bookmark-clicklistener" onclick="clickBookmarkIcon(this, '${fillBool}','${itemid}');event.stopPropagation();"></div>
                                             <object type="image/svg+xml" data="/assets/img/bookmark-${fillBool}.svg" class="bookmark-${fillBool}-icon"></object>

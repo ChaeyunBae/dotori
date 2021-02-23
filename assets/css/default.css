@@ -217,6 +217,10 @@ body {
 	height: 20px;
 }
 
+.ar-icon {
+	margin-left: 7px;
+}
+
 .bookmark-clicklistener {
 	position: absolute;
 	width: 20px;

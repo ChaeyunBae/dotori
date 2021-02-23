@@ -41,6 +41,9 @@
                     <div class="card-body">
                         <div data-toggle="modal" data-target="#modal-detailview" onclick="setDetailViewModal('{{.ID.Hex}}')">
                             <h5 class="card-title">{{.Title}}
+                            {{if eq .ItemType "usd"}}
+                                <img src="/assets/img/ar.svg" class="ar-icon">
+                            {{end}}
                             <!-- Favorite Icon -->
                             <div class="bookmark-icon">
                                 {{$fillBool := "unfilled"}}
